@@ -1,3 +1,5 @@
+@import "../utilities/variables";
+
 * {
   margin: 0;
   padding: 0;
@@ -7,12 +9,12 @@
   list-style: none;
   font-weight: 900;
   text-decoration: none;
-  color: $font-colour;
+  color: $font-color;
 }
 
 h1 {
   font-size: clamp(3rem, 2.5vw, 6rem);
-  color: $mina-colour;
+  color: $mina-color;
   user-select: none;
 }
 

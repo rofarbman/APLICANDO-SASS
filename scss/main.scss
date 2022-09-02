@@ -1,67 +1,27 @@
+/* base */
+
 @import "./base/reset";
 @import "./base/typo";
-@import "./layout/header";
+
+/* components */
+
+@import "./components/button-mina";
+@import "./components/footer-logos";
+@import "./components/img-nosotros";
+@import "./components/img-home";
+@import "./components/nav";
+@import "./components/cards-services";
+@import "./components/logo-mina";
+@import "./components/links";
+@import "./components/video";
+@import "./components/img-services";
+
+/* layout */
+
 @import "./layout/footer";
 @import "./layout/form";
+@import "./layout/nosotros";
 
-/* navbar - menu */
+/* utilities */
 
-.nav-radius {
-  border-radius: 0 0 1em 1em;
-}
-
-.link-mina:hover {
-  color: $accent;
-}
-
-/* home */
-
-.animation {
-  transform:
-    perspective(750px) translate3d(0px, 0px, -250px) rotateX(27deg) scale(0.9, 0.9);
-  border-radius: 50%;
-  border: 5px solid #e6e6e6;
-  box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.2);
-  transition: 0.4s ease-in-out transform;
-}
-
-.logo {
-  font-size: 1.2rem;
-  color: $mina-colour;
-}
-
-.img-home {
-  max-width: 20em;
-  max-height: 20em;
-  border-radius: 50%;
-  object-fit: cover;
-  aspect-ratio: 1/1;
-}
-
-.animation:hover {
-  transform: translate3d(0px, 0px, -250px);
-}
-
-.welcome-vid {
-  border-radius: 1em;
-  width: 100%;
-}
-
-/* about us */
-
-.welcome {
-  max-width: 80vw;
-  border-radius: 1em;
-}
-
-.circle {
-  transform: rotate(.054turn);
-  border-radius: 50%;
-}
-
-/* services */
-
-.card-services {
-  max-height: 1.2em;
-  border-radius: 1em 1em 0 0;
-}
+@import "./utilities/variables";
